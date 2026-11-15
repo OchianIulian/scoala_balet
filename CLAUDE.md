@@ -32,6 +32,13 @@ any script runs, so the link preview needs them. `SITE_URL` (set in the deploy
 workflow) makes their URLs absolute. To add a school: new folder + `school.json`.
 Layout, palette and typography are shared, not per school.
 
+## Reviewing a school
+
+After building or editing a school, run the `website-reviewer` skill
+(`.claude/skills/website-reviewer/`): it checks the page against the user's
+past corrections, fixes the objective faults and proposes options for the
+rest. Nothing is pushed or merged without the user saying so.
+
 ## Content rules
 
 **No eyebrow/kicker labels above headings.** Do not add small tracked-caps labels
